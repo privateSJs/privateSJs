@@ -140,7 +140,8 @@ html,
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
-  tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
@@ -174,7 +175,8 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr:where([title]) {
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -438,6 +440,11 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
@@ -626,19 +633,16 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
-
 :root {
     --background: #ffffff;
     --foreground: #171717;
 }
-
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #d5d5d5;
         --foreground: #ededed;
     }
 }
-
 body {
     color: var(--foreground);
     background: var(--background);
@@ -649,32 +653,26 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-attachment: scroll, scroll;
 }
-
 .hover\\:rounded-md:hover {
   border-radius: 0.375rem;
 }
-
 .hover\\:border-black:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
-
 .hover\\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
-
 .hover\\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
-
 .hover\\:ring-2:hover {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-
 .hover\\:ring-black:hover {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity, 1));
