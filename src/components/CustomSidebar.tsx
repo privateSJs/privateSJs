@@ -1,5 +1,5 @@
 "use client";
-import { SideBarProps } from "@/type/type";
+import { SideBarProps } from "../type/type";
 import Image from "next/image";
 import Link from "next/link";
 

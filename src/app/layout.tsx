@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { ReactNode } from "react";
-import CustomSidebar from "@/components/CustomSidebar";
+import CustomSidebar from "../components/CustomSidebar";
 import {
   FaHome,
   FaUserAlt,
@@ -10,7 +10,7 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
-import { images } from "@/constants";
+import { images } from "../constants";
 import "./globals.css";
 
 const Layout = ({ children }: { children: ReactNode }) => {
