@@ -17,7 +17,7 @@
 body {
     color: var(--foreground);
     background: var(--background);
-    font-family: 'Comic Sans MS', "Comic Sans", cursive;
+    font-family: 'Comic Sans MS', "Comic Sans", monospace;
     height: 100vh; /* Zapewni, że tło obejmuje cały ekran */
     background-image: url("../../public/assets/db-image.png"), url("../../public/assets/anaconda-image.png");
     background-position: 20% 120%, 98% 10%;
