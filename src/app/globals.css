@@ -19,8 +19,8 @@ body {
     background: var(--background);
     font-family: 'Courier New', Courier, monospace;
     height: 100vh; /* Zapewni, że tło obejmuje cały ekran */
-    background-image: url("../assets/db-image.png"), url("../assets/anaconda-image.png");
-    background-position: 20% 120%, 98% 0%;
+    background-image: url("../../public/assets/db-image.png"), url("../../public/assets/anaconda-image.png");
+    background-position: 20% 120%, 98% 10%;
     background-repeat: no-repeat, no-repeat;
     background-attachment: scroll, scroll;
 }
