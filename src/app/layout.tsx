@@ -35,7 +35,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <body className="flex flex-1">
         <div>
           <CustomSidebar
-            imgSrc={images.profile}
+            imgSrc={images.profilev2}
             socialItems={socialSidebarItems}
             items={sidebarItems}
             isOpen={true}
