@@ -1,0 +1,29 @@
+{
+  "HomeScreen": {
+    "Welcome": "Cześć,",
+    "Introduce": " mam na imię ",
+    "Name": "Jarek ",
+    "Proffesion": "Inżynier Automatyzacji",
+    "Pep-talk": "Lenistwo jest problemem, a problem to szansa na odkrycie czegoś nowego. Zrozumienie świata i poznawanie nowych rzeczy prowadzi do ułatwiania sobie życia, a efektem tego jest automatyzacja",
+    "Sidebar": {
+      "Home": "Początek",
+      "AboutMe": "O mnie",
+      "Contact": "Kontakt"
+    },
+    "Button": "Skontakuj się ->"
+
+  },
+  "AboutMeScreen": {
+    "Title": "Coś więcej o mnie ...",
+    "Description": "Mam na imię Jarek, mam 25 lat i studiuję Automatykę i Robotykę na specjalizacji IT na Politechnice Krakowskiej. Fascynuję się automatyzacją i wszystkim, co pozwala na usprawnienie procesów – wierzę, że każdą czynność można zoptymalizować, by była szybsza i bardziej efektywna. Moje zainteresowania to nie tylko programowanie, ale też szukanie innowacyjnych rozwiązań, które ułatwiają życie i pracę.",
+    "EducationTitle": "Wykształcenie",
+    "Education1": "Od zawsze lubiłem technologię i to, jak sprytne rozwiązania mogą ułatwiać życie. Dlatego zamiast liceum wybrałem technikum – konkretnie ZSEiO Technikum nr 4 w Przemyślu na kierunku Teleinformatyk. To tam wkręciłem się w świat sieci, systemów komputerowych i telekomunikacji, a moja zajawka na inżynierię dopiero się zaczęła!",
+    "Education2": "Chcąc dalej się rozwijać, wybrałem studia na Politechnice Krakowskiej. Zamiast trzymać się informatyki, postawiłem na Automatykę i Robotykę, żeby poszerzyć swoją wiedzę o nowe obszary. Dzięki temu mogłem zgłębić automatyzację, algorytmy i inżynierskie podejście do technologii.",
+    "Education3": "Na studiach wkręciłem się w automatyzację i algorytmy – szybko zrozumiałem, że to mój kierunek. Lubię upraszczać i optymalizować procesy, bo technologia ma ułatwiać życie. Obroniłem inżyniera, a teraz kontynuuję magisterkę, cały czas szukając nowych wyzwań i możliwości rozwoju.",
+    "HobbyTitle": "Pasje",
+    "Hobby1": "W wolnym czasie trenuję umysł, rozwiązując algorytmy, czytając książki i ucząc się nowych języków programowania. To dla mnie intelektualne wyzwanie. Oprócz tego dbam o aktywność fizyczną i rozwijam pasje, które mam od dziecka – sport i podróże.",
+    "Hobby2": "Mam małego, czworonożnego przyjaciela o imieniu Milo – prawdziwego łobuziaka, którego codzienna rutyna składa się głównie z jedzenia, spania i zabawy.",
+    "Hobby3": "Czasem lubię porządnie się zmęczyć – wziąć na siebie konkretny wysiłek, po to, żeby poczuć ten z**ierdol, naprawdę się spocić i sprawdzić swoje granice. Robię to w różnych płaszczyznach, ale najwięcej czasu poświęciłem piłce nożnej. To właśnie na boisku czuję się najlepiej, ale z chęcią szukam nowych wyzwań w innych dyscyplinach, by sprawdzić, w czym jeszcze jestem dobry.",
+    "Hobby4": ""
+  }
+}

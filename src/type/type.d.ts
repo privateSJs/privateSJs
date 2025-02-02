@@ -1,5 +1,5 @@
 import { React } from "react";
-import { ReactNode } from "react";
+import { ReactNode, ButtonHTMLAttributes } from "react";
 
 declare interface LayoutProps {
   children: ReactNode;
@@ -22,4 +22,14 @@ declare interface SideBarProps {
   classNameSocialItems?: string;
   hoverItems?: string;
   classNameSidebar?: string;
+}
+
+declare interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  title?: string;
+  image?: string;
+  altImage?: string;
+  staticImage?: React.ComponentType<any>;
+  iconLeft?: React.ComponentType<any>;
+  iconRight?: React.ComponentType<any>;
+  className: string;
 }

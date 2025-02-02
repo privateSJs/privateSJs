@@ -1,0 +1,28 @@
+{
+  "HomeScreen": {
+    "Welcome": "Hi, ",
+    "Introduce": "I am ",
+    "Name": "Jarek ",
+    "Proffesion": "a Automation Engineer",
+    "Pep-talk": "Laziness is a problem, and a problem is an opportunity to discover something new. Understanding the world and discovering new things leads to simplifying life, and the result of that is automation",
+    "Sidebar": {
+      "Home": "Home",
+      "AboutMe": "About Me",
+      "Contact": "Contact"
+    },
+    "Button": "Contact Me ->"
+  },
+  "AboutMeScreen": {
+    "Title": "About me ...",
+    "Description": "My name is Jarek, I am 25 years old, and I study Automation and Robotics with an IT specialization at the Cracow University of Technology. I am passionate about automation and everything that helps streamline processes – I believe every task can be optimized to make it faster and more efficient. My interests are not only in programming but also in finding innovative solutions that make life and work easier.",
+    "EducationTitle": "Education",
+    "Education1": "I've always been into technology and how clever solutions can make life easier. That's why, instead of high school, I chose technical school – specifically ZSEiO Technikum nr 4 in Przemyśl, majoring in Telecommunications. That's where I got into the world of networks, computer systems, and telecommunications, and my engineering passion was just beginning!",
+    "Education2": "Wanting to keep growing, I chose to study at the Cracow University of Technology. Instead of sticking to IT, I decided to focus on Automation and Robotics to expand my knowledge into new areas. Thanks to this, I could dive deep into automation, algorithms, and an engineering approach to technology.",
+    "Education3": "During my studies, I got into automation and algorithms – I quickly realized it was the direction for me. I enjoy simplifying and optimizing processes because technology is supposed to make life easier. I graduated with a bachelor's degree and am now continuing my master's studies, always looking for new challenges and development opportunities.",
+    "HobbyTitle": "Hobbies",
+    "Hobby1": "In my free time, I train my mind by solving algorithms, reading books, and learning new programming languages. It's an intellectual challenge for me. In addition, I take care of my physical activity and develop hobbies I've had since childhood – sports and traveling.",
+    "Hobby2": "I have a small four-legged friend named Milo – a real rascal, whose daily routine mostly consists of eating, sleeping, and playing.",
+    "Hobby3": "Sometimes I like to push myself hard – take on some serious effort to feel that 'grind,' really sweat, and test my limits. I do this in various areas, but I've spent the most time on soccer. That's where I feel the best, but I'm eager to seek new challenges in other disciplines to see how far I can go.",
+    "Hobby4": ""
+  }
+}
