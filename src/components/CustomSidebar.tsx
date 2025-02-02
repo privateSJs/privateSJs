@@ -2,9 +2,6 @@
 import { SideBarProps } from "../type/type";
 import Image from "next/image";
 import Link from "next/link";
-import CustomButton from "../components/CustomButton";
-import { useTranslation } from "react-i18next";
-import { icons } from "../constants";
 
 const CustomSidebar = ({
   isOpen,

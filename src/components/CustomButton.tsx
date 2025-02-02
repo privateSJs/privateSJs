@@ -12,7 +12,6 @@ const CustomButton = ({
     iconLeft,
     iconRight,
     className,
-    ...props
 }: ButtonProps) => {
     return (
         <button className={className} onClick={onClick}>

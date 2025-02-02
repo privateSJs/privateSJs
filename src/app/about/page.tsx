@@ -38,7 +38,7 @@ const AboutMe = () => {
                   <Image key={i} src={img}
                          alt={`Slideshow Image ${i}`}
                          className={`w-[600px] h-[800px] absolute inset-0 object-cover duration-1000 ease-in-out ${
-                             i === index ? "opacity-100" : "opacity-0"
+                             i === index ? `opacity-${fade ? '100' : '0'}` : "opacity-0"
                          }`}
                   />
               ))}

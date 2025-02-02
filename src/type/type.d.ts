@@ -28,8 +28,8 @@ declare interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title?: string;
   image?: string;
   altImage?: string;
-  staticImage?: React.ComponentType<any>;
-  iconLeft?: React.ComponentType<any>;
-  iconRight?: React.ComponentType<any>;
+  staticImage?: React.ComponentType<React.ImgHTMLAttributes<HTMLImageElement>>;
+  iconLeft?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  iconRight?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   className: string;
 }
