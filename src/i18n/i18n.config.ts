@@ -13,7 +13,7 @@ const resources = {
 };
 
 i18next.use(initReactI18next).init({
-  debug: true,
+  debug: false,
   lng: "en",
   fallbackLng: "pl",
   interpolation: {

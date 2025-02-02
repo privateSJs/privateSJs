@@ -9,7 +9,7 @@ const Page = () => {
   return (
       <div className="space-y-4">
           <ParticlesBackground/>
-          <div className=" absolute top-1/2 left-[200px] justify-center items-center ml-20">
+          <div className=" absolute top-1/2 justify-center items-center ml-20 mr-20">
               <h1 className=" flex flex-col text-6xl font-bold text-left text-white mb-2 ml-3 ">
                   <span>{bodyPage.welcome}</span>
                   <span>{bodyPage.introduce}

@@ -48,29 +48,31 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
   return (
     <html lang={currentLanguage}>
-      <body className="flex flex-1">
+      <body className="flex">
       <title>Perpetuum Mobile</title>
-      <p className="fixed top-0 left-0 z-10 ">
-        <CustomButton className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "pl" ? "border-[3px] border-white" : ""} rounded-full`}
-                      onClick={() => changeLanguage("pl")}
-                      staticImage={icons.langPl}
-                      altImage="My button"
-        />
-        <CustomButton className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "en" ? "border-[3px] border-white" : ""} rounded-full`}
-                      onClick={() => changeLanguage("en")}
-                      staticImage={icons.langEn}
-                      altImage="My button"
-        />
-      </p>
-        <div className=" h-screen fixed mr-20">
-          <CustomSidebar
+      <div className="fixed w-screen z-10">
+        <p className="fixed top-0 left-0 ">
+          <CustomButton
+              className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "pl" ? "border-[3px] border-white" : ""} rounded-full`}
+              onClick={() => changeLanguage("pl")}
+              staticImage={icons.langPl}
+              altImage="My button"
+          />
+          <CustomButton
+              className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "en" ? "border-[3px] border-white" : ""} rounded-full`}
+              onClick={() => changeLanguage("en")}
+              staticImage={icons.langEn}
+              altImage="My button"
+          />
+        </p>
+        <CustomSidebar
             imgSrc={images.profilev2}
             socialItems={socialSidebarItems}
             items={sidebarItems}
             isOpen={true}
-          />
-        </div>
-        <main className="flex-1">{children}</main>
+        />
+      </div>
+      <main className="flex-1 mt-[250px]">{children}</main>
       </body>
     </html>
   );
