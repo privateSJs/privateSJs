@@ -42,7 +42,7 @@ const CustomSidebar = ({
                             pathname === item.link ? 'border-b-2 border-blue-300' : ''
                         }`}>
                             {item.icon}
-                            <span>{item.label}</span>
+                            <span className="hidden md:inline">{item.label}</span>
                         </div>
                     </Link>
                 ))}
