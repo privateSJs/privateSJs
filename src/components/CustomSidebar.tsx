@@ -9,11 +9,11 @@ const CustomSidebar = ({
   items,
   socialItems,
   imgSrc,
-  classNameSidebar = "flex gap-10 w-full flex-row bg-[#000000] items-center justify-center text-xl text-white p-6 ring-2 ring-white ring-opacity-20 mb-2",
+  classNameSidebar = "flex gap-10 w-full flex-row bg-[#000000] items-center justify-center text-xl text-white p-6 border-b-2 border-white border-opacity-20 mb-2",
   hoverItems = "hover:bg-white hover:text-black hover:border-10 hover:border-black hover:ring-2 hover:ring-white hover:ring-offset-10 transition-all duration-300 hover:rounded-md",
   classNameImage = "flex justify-center rounded-full",
   classNameItems = "flex flex-1 items-center justify-between text-xl space-x-2",
-  classNameSocialItems = "flex flex-row justify-start items-center space-x-10 mb-2",
+  classNameSocialItems = "flex flex-row justify-between items-center space-x-10 mb-2 border-b-2 border-white border-opacity-20 mb-2",
 }: SideBarProps) => {
     const pathname = usePathname();
 

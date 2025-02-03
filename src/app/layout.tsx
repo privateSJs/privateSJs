@@ -51,7 +51,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <body className="flex">
       <title>Perpetuum Mobile</title>
       <div className="fixed w-screen z-10">
-        <p className="fixed top-0 left-0 ">
+        <p className="fixed top-0 left-0 w-full">
           <CustomButton
               className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "pl" ? "border-[3px] border-white" : ""} rounded-full`}
               onClick={() => changeLanguage("pl")}
