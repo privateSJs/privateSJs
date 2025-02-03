@@ -7,7 +7,7 @@ import CustomButton from "@/components/CustomButton";
 const Page = () => {
     const { bodyPage } = GetHomePageData();
   return (
-      <div className="space-y-4">
+      <div className="space-y-4 min-h-full min-w-full">
           <ParticlesBackground/>
           <div className=" absolute top-1/2 justify-center items-center ml-[20px] mr-[20px]">
               <h1 className=" flex flex-col text-6xl font-bold text-left text-white mb-2 ml-3 ">
