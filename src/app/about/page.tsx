@@ -32,33 +32,46 @@ const AboutMe = () => {
     }, []);
 
   return (
-      <div className="flex ml-[100px] mr-[100px] bg-white border-[3px] border-black border-opacity-20 text-black font-bold opacity-95">
-          <div className="relative w-full items-center justify-center">
-              {imgs.map((img, i) => (
-                  <Image key={i} src={img}
-                         alt={`Slideshow Image ${i}`}
-                         className={`w-[600px] h-[800px] absolute inset-0 object-cover duration-1000 ease-in-out ${
-                             i === index ? `opacity-${fade ? '100' : '0'}` : "opacity-0"
-                         }`}
-                  />
-              ))}
-          </div>
-          <div className="flex flex-col divide-y divide-black divide-opacity-20 py-2 px-5 max-w-[800px]">
-              {[
-                  {title: bodyPage.title, description1: bodyPage.description},
-                  {title: bodyPage.educationTitle, description1: bodyPage.education1, description2: bodyPage.education2, description3: bodyPage.education3,},
-                  {title: bodyPage.hobbyTitle, description1: bodyPage.hobby1,description2: bodyPage.hobby2, description3: bodyPage.hobby3, description4: bodyPage.hobby4,},
-              ].map((section, index) => (
-                  <div key={index} className="py-4">
-                      <h1 className={`${index === 0 ? "text-[60px]" : "text-[40px]"} font-bold text-black`}>
-                          {section.title}
-                      </h1>
-                      {[section.description1, section.description2, section.description3, section.description4].filter(Boolean).map((description, i) => (
-                          <p key={i} className='mb-3 mt-1 text-lg opacity-60'>{description}</p>
-                      ))}
-                  </div>
+      <div className="relative ml-[100px] mr-[100px] justify-center items-center bg-white border-[3px] border-black border-opacity-20 text-black font-bold opacity-95">
+          <div className="flex flex-row  w-full h-1/2">
+              <div className="relative flex w-full top-[300px] ml-[140px] md:w-1/2 h-96 md:h-auto">
+                  {imgs.map((img, i) => (
+                      <Image key={i} src={img}
+                             alt={`Slideshow Image ${i}`}
+                             className={`w-[600px] h-[800px] absolute inset-0 object-cover duration-1000 ease-in-out ${
+                                 i === index ? `opacity-${fade ? '100' : '0'}` : "opacity-0"
+                             }`}
+                      />
+                  ))}
+              </div>
+              <div className="flex flex-col divide-y divide-black divide-opacity-20 py-2 px-5 max-w-[800px] text-justify">
+                  {[
+                      {title: bodyPage.title, description1: bodyPage.description},
+                      {
+                          title: bodyPage.educationTitle,
+                          description1: bodyPage.education1,
+                          description2: bodyPage.education2,
+                          description3: bodyPage.education3,
+                      },
+                      {
+                          title: bodyPage.hobbyTitle,
+                          description1: bodyPage.hobby1,
+                          description2: bodyPage.hobby2,
+                          description3: bodyPage.hobby3,
+                          description4: bodyPage.hobby4,
+                      },
+                  ].map((section, index) => (
+                      <div key={index} className="py-4">
+                          <h1 className={`${index === 0 ? "text-[60px]" : "text-[40px]"} font-bold text-black`}>
+                              {section.title}
+                          </h1>
+                          {[section.description1, section.description2, section.description3, section.description4].filter(Boolean).map((description, i) => (
+                              <p key={i} className='mb-3 mt-1 text-lg opacity-60'>{description}</p>
+                          ))}
+                      </div>
 
-              ))}
+                  ))}
+              </div>
           </div>
       </div>
 
