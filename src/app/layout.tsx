@@ -17,7 +17,6 @@ import CustomButton from "@/components/CustomButton";
 import GetHomePageData from "@/components/HomePageData";
 import { useTranslation } from "react-i18next";
 import '../i18n/i18n.config';
-import {Head} from "next/document";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   //const [isSidebarOpen, setSidebarOpen] = useState(false);
