@@ -48,6 +48,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
   return (
     <html lang={currentLanguage}>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
       <body className="flex">
       <title>Perpetuum Mobile</title>
       <div className="fixed w-full z-10">
