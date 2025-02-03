@@ -17,6 +17,7 @@ import CustomButton from "@/components/CustomButton";
 import GetHomePageData from "@/components/HomePageData";
 import { useTranslation } from "react-i18next";
 import '../i18n/i18n.config';
+import {Head} from "next/document";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   //const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -48,11 +49,11 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
   return (
     <html lang={currentLanguage}>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-      <body className="flex">
-      <title>Perpetuum Mobile</title>
-      <div className="fixed w-full z-10">
-        <p className="fixed top-0 left-0 w-full">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <body className="flex">
+    <title>Perpetuum Mobile</title>
+    <div className="fixed w-full z-10">
+    <p className="fixed top-0 left-0 w-full">
           <CustomButton
               className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "pl" ? "border-[3px] border-white" : ""} rounded-full`}
               onClick={() => changeLanguage("pl")}

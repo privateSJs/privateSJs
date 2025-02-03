@@ -33,18 +33,18 @@ const AboutMe = () => {
 
   return (
       <div className="relative ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px] justify-center items-center bg-white border-[3px] border-black border-opacity-20 text-black font-bold opacity-95">
-          <div className="flex flex-row w-full h-1/2">
-              <div className="relative w-full top-[300px] ml-[140px] hidden lg:block">
+          <div className="flex flex-row w-full h-full justify-center items-center">
+              <div className="relative w-[1000px] h-[800px] hidden lg:block ml-[40px]">
                   {imgs.map((img, i) => (
                       <Image key={i} src={img}
                              alt={`Slideshow Image ${i}`}
-                             className={`w-[600px] h-[800px] absolute inset-0 object-cover duration-1000 ease-in-out ${
+                             className={`w-[600px] h-[800px] absolute object-cover duration-1000 ease-in-out ${
                                  i === index ? `opacity-${fade ? '100' : '0'}` : "opacity-0"
                              }`}
                       />
                   ))}
               </div>
-              <div className="flex flex-col divide-y divide-black divide-opacity-20 py-2 px-5 max-w-[800px] text-justify">
+              <div className="flex flex-col divide-y divide-black divide-opacity-20 py-2 px-5 w-full text-justify">
                   {[
                       {title: bodyPage.title, description1: bodyPage.description},
                       {
