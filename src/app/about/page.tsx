@@ -33,8 +33,8 @@ const AboutMe = () => {
 
   return (
       <div className="relative ml-[100px] mr-[100px] justify-center items-center bg-white border-[3px] border-black border-opacity-20 text-black font-bold opacity-95">
-          <div className="flex flex-row  w-full h-1/2">
-              <div className="relative flex w-full top-[300px] ml-[140px] md:w-1/2 h-96 md:h-auto">
+          <div className="flex flex-row w-full h-1/2">
+              <div className="relative w-full top-[300px] ml-[140px] hidden md:block">
                   {imgs.map((img, i) => (
                       <Image key={i} src={img}
                              alt={`Slideshow Image ${i}`}
