@@ -11,7 +11,7 @@ const CustomSidebar = ({
   imgSrc,
   classNameSidebar = "flex gap-10 w-full flex-row bg-[#000000] items-center justify-center text-xl text-white p-6 border-b-2 border-white border-opacity-20 mb-2",
   hoverItems = "hover:bg-white hover:text-black hover:border-10 hover:border-black hover:ring-2 hover:ring-white hover:ring-offset-10 transition-all duration-300 hover:rounded-md",
-  classNameImage = "flex justify-center rounded-full",
+  classNameImage = "flex justify-center h-auto object-cover rounded-full",
   classNameItems = "flex flex-1 items-center justify-between text-xl space-x-2",
   classNameSocialItems = "flex flex-row justify-between items-center space-x-10 mb-2 border-b-2 border-white border-opacity-20 mb-2",
 }: SideBarProps) => {

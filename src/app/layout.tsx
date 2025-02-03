@@ -47,35 +47,37 @@ const Layout = ({ children }: { children: ReactNode }) => {
   ];
 
   return (
-    <html lang={currentLanguage}>
-    <body className="flex">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <title>Perpetuum Mobile</title>
-    <div className="fixed w-full z-10">
-      <p className="fixed top-0 left-0 w-full">
-        <CustomButton
-            className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "pl" ? "border-[3px] border-white" : ""} rounded-full`}
-            onClick={() => changeLanguage("pl")}
-            staticImage={icons.langPl}
-            altImage="My button"
+      <html lang={currentLanguage}>
+      <head>
+        <title>Perpetuum Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      </head>
+      <body className="flex">
+      <div className="fixed w-full z-10">
+        <p className="fixed top-0 left-0 w-full">
+          <CustomButton
+              className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "pl" ? "border-[3px] border-white" : ""} rounded-full`}
+              onClick={() => changeLanguage("pl")}
+              staticImage={icons.langPl}
+              altImage="My button"
+          />
+          <CustomButton
+              className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "en" ? "border-[3px] border-white" : ""} rounded-full`}
+              onClick={() => changeLanguage("en")}
+              staticImage={icons.langEn}
+              altImage="My button"
+          />
+        </p>
+        <CustomSidebar
+            imgSrc={images.profilev2}
+            socialItems={socialSidebarItems}
+            items={sidebarItems}
+            isOpen={true}
         />
-        <CustomButton
-            className={`w-8 h-8 mt-2 ml-2 hover:opacity-50 ${currentLanguage === "en" ? "border-[3px] border-white" : ""} rounded-full`}
-            onClick={() => changeLanguage("en")}
-            staticImage={icons.langEn}
-            altImage="My button"
-        />
-      </p>
-      <CustomSidebar
-          imgSrc={images.profilev2}
-          socialItems={socialSidebarItems}
-          items={sidebarItems}
-          isOpen={true}
-      />
-    </div>
-    <main className="flex-1 mt-[250px]">{children}</main>
-    </body>
-    </html>
+      </div>
+      <main className="flex-1 mt-[250px]">{children}</main>
+      </body>
+      </html>
   );
 };
 
