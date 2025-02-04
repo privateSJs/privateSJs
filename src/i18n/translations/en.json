@@ -24,5 +24,22 @@
     "Hobby2": "I have a small four-legged friend named Milo – a real rascal, whose daily routine mostly consists of eating, sleeping, and playing.",
     "Hobby3": "Sometimes I like to push myself hard – take on some serious effort to feel that 'grind,' really sweat, and test my limits. I do this in various areas, but I've spent the most time on soccer. That's where I feel the best, but I'm eager to seek new challenges in other disciplines to see how far I can go.",
     "Hobby4": ""
+  },
+  "ContactMeScreen": {
+    "Title": "📩 Send message to me",
+    "Introduce": "💬 Got a question? Or maybe you want to collaborate on something cool? 🚀",
+    "Description": "Feel free to hit me up and let me know what's on your mind – whether it’s a project, an idea, or just a casual chat. Send me a message, and we’ll sort it out ASAP! 🔥",
+    "FullName": "Full name or nickname",
+    "FullNamePlaceHolder": "Enter your full name or nickname",
+    "Email": "Email address",
+    "EmailPlaceHolder": "Enter your email address",
+    "PhoneNo": "Phone number",
+    "PhoneNoPlaceHolder": "Enter your phone number",
+    "Message": "Your message",
+    "MessagePlaceHolder": "Write your message here...",
+    "ButtonSubmit":"Submit",
+    "Policy1": "I consent to the processing of my personal data in accordance with the",
+    "Policy2": "I have read and understand how my data will be used.",
+    "Policy3": "Privacy Policy."
   }
 }

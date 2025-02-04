@@ -25,5 +25,22 @@
     "Hobby2": "Mam małego, czworonożnego przyjaciela o imieniu Milo – prawdziwego łobuziaka, którego codzienna rutyna składa się głównie z jedzenia, spania i zabawy.",
     "Hobby3": "Czasem lubię porządnie się zmęczyć – wziąć na siebie konkretny wysiłek, po to, żeby poczuć ten z**ierdol, naprawdę się spocić i sprawdzić swoje granice. Robię to w różnych płaszczyznach, ale najwięcej czasu poświęciłem piłce nożnej. To właśnie na boisku czuję się najlepiej, ale z chęcią szukam nowych wyzwań w innych dyscyplinach, by sprawdzić, w czym jeszcze jestem dobry.",
     "Hobby4": ""
+  },
+  "ContactMeScreen": {
+    "Title": "\uD83D\uDCE9 Napisz do mnie",
+    "Introduce": "\uD83D\uDCAC Masz pytanie? A może chcesz ogarnąć jakiś wspólny projekt? \uD83D\uDE80",
+    "Description": "Wbijaj śmiało, napisz, co jest na rzeczy – czy to współpraca, pomysł, czy luźna zajawka. Wyślij mi wiadomość, a ogarniemy temat najszybciej, jak się da! \uD83D\uDD25",
+    "FullName": "Imię i Nazwisko lub pseudonim",
+    "FullNamePlaceHolder": "Wpisz swoje pełne imię lub pseudonim",
+    "Email": "Adres email",
+    "EmailPlaceHolder": "Wpisz swój adres e-mail",
+    "PhoneNo": "Numer telefonu",
+    "PhoneNoPlaceHolder": "Wpisz swój numer telefonu",
+    "Message": "Twoja wiadomość",
+    "MessagePlaceHolder": "Napisz swoją wiadomość tutaj",
+    "ButtonSubmit":"Wyślij",
+    "Policy1": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z",
+    "Policy2": "Zapoznałem/am się z warunkami i rozumiem, w jaki sposób moje dane będą używane.",
+    "Policy3": "Polityką Prywatności."
   }
 }

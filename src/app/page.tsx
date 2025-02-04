@@ -21,7 +21,7 @@ const Page = () => {
               <p className="flex text-lg text-md text-center text-gray-500 mt-10 ml-3 italic">
                   ~ {bodyPage.peptalk} ~
               </p>
-              <CustomButton title={bodyPage.button} className='flex flex-1 justify-center items-center mt-10 mb-2 ml-3 font-bold text-2xl hover:opacity-50 bg-blue-300 text-white px-4 rounded-[15px] h-[80px] '/>
+              <CustomButton title={bodyPage.button}/>
           </div>
       </div>
   );
