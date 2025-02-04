@@ -23,7 +23,7 @@ const ContactForm = () => {
                 <span className="text-lg font-bold mt-2 mb-5 text-left">{bodyPage.introduce}</span>
                 <span>{bodyPage.description}</span>
             </div>
-            <div className='flex flex-row'>
+            <div className='flex flex-row '>
                 <div className="flex justify-center items-center h-full w-full bg-white  pt-4 pb-4  pl-4 pr-4 border-black border-opacity-20">
                     <li className="flex flex-col space-y-4 w-full">
                         <CustomInput type='text' label={bodyPage.fullname} placeholder={bodyPage.fullnamePlaceholder}/>
