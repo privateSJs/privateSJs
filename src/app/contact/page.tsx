@@ -101,25 +101,40 @@ const ContactForm = () => {
                     <div
                         className="flex justify-center items-center h-full w-full bg-blue-300 rounded-xl pt-4 pb-4  pl-4 pr-4 border-4 border-white">
                         <li className="flex flex-col space-y-4 w-full">
+                            <CustomButton type="button" title={bodyPage.btnClearAllFields}
+                                          onClick={() => clearAllFields()}
+                                          className="text-xl text-black underline italic hover:opacity-50 active:scale-90 ml-auto"/>
                             <div>
                                 <CustomInput type='text' name="user_name" label={bodyPage.fullname}
-                                             placeholder={bodyPage.fullnamePlaceholder} onChange={handeInputChange} value={formData.user_name} required/>
-                                <CustomButton type="button" title={bodyPage.btnClearField} onClick={() => clearField("user_name")} className="text-xs text-black underline italic hover:opacity-50 active:scale-90" />
+                                             placeholder={bodyPage.fullnamePlaceholder} onChange={handeInputChange}
+                                             value={formData.user_name} required/>
+                                <CustomButton type="button" title={bodyPage.btnClearField}
+                                              onClick={() => clearField("user_name")}
+                                              className="text-xs text-black underline italic hover:opacity-50 active:scale-90"/>
                             </div>
                             <div>
                                 <CustomInput type='email' name="user_email" label={bodyPage.email}
-                                             placeholder={bodyPage.emailPlaceholder} onChange={handeInputChange} value={formData.user_email} required/>
-                                <CustomButton type="button" title={bodyPage.btnClearField} onClick={() => clearField("user_email")}  className="text-xs text-black underline italic hover:opacity-50 active:scale-90" />
+                                             placeholder={bodyPage.emailPlaceholder} onChange={handeInputChange}
+                                             value={formData.user_email} required/>
+                                <CustomButton type="button" title={bodyPage.btnClearField}
+                                              onClick={() => clearField("user_email")}
+                                              className="text-xs text-black underline italic hover:opacity-50 active:scale-90"/>
                             </div>
                             <div>
                                 <CustomInput type='tel' name="user_phone" label={bodyPage.phoneNo}
-                                             placeholder={bodyPage.phoneNoPlaceholder} onChange={handeInputChange} value={formData.user_phone}/>
-                                <CustomButton type="button" title={bodyPage.btnClearField} onClick={() => clearField("user_phone")} className="text-xs text-black underline italic hover:opacity-50 active:scale-90" />
+                                             placeholder={bodyPage.phoneNoPlaceholder} onChange={handeInputChange}
+                                             value={formData.user_phone}/>
+                                <CustomButton type="button" title={bodyPage.btnClearField}
+                                              onClick={() => clearField("user_phone")}
+                                              className="text-xs text-black underline italic hover:opacity-50 active:scale-90"/>
                             </div>
                             <div>
                                 <CustomTextarea name="message" label={bodyPage.message}
-                                                placeholder={bodyPage.messagePlaceholder} onChange={handeInputChange} value={formData.message} required/>
-                                <CustomButton type="button" title={bodyPage.btnClearField} onClick={() => clearField("message")} className="text-xs text-black underline italic hover:opacity-50 active:scale-90" />
+                                                placeholder={bodyPage.messagePlaceholder} onChange={handeInputChange}
+                                                value={formData.message} required/>
+                                <CustomButton type="button" title={bodyPage.btnClearField}
+                                              onClick={() => clearField("message")}
+                                              className="text-xs text-black underline italic hover:opacity-50 active:scale-90"/>
                             </div>
                             <div className="flex flex-1 space-x-2 items-center text-justify justify-start">
                                 <CustomInput
