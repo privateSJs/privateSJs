@@ -41,6 +41,9 @@
     "ButtonSubmit":"Wyślij",
     "Policy1": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z",
     "Policy2": "Zapoznałem/am się z warunkami i rozumiem, w jaki sposób moje dane będą używane.",
-    "Policy3": "Polityką Prywatności."
+    "Policy3": "Polityką Prywatności.",
+    "ButtonClearField": "❌ Wyczyść pole",
+    "ButtonClearAllFields": "❌ Wyczyść wszystkie pola",
+    "SuccessAllert": "\uD83D\uDC4D\uD83D\uDE80 E-mail został przesłany pomyślnie!"
   }
 }

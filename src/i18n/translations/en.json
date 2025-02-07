@@ -40,6 +40,9 @@
     "ButtonSubmit":"Submit",
     "Policy1": "I consent to the processing of my personal data in accordance with the",
     "Policy2": "I have read and understand how my data will be used.",
-    "Policy3": "Privacy Policy."
+    "Policy3": "Privacy Policy.",
+    "ButtonClearField": "❌ Clear field",
+    "ButtonClearAllFields": "❌ Clear all fields",
+    "SuccessAllert": "\uD83D\uDC4D\uD83D\uDE80 E-mail sent succesfully!"
   }
 }

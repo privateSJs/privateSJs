@@ -21,6 +21,9 @@ function GetContactPageData() {
             policy1: t("ContactMeScreen.Policy1"),
             policy2: t("ContactMeScreen.Policy2"),
             policy3: t("ContactMeScreen.Policy3"),
+            btnClearField: t("ContactMeScreen.ButtonClearField"),
+            btnClearAllFields: t("ContactMeScreen.ButtonClearAllFields"),
+            successAlert: t("ContactMeScreen.SuccessAllert")
         }
     }
 }
