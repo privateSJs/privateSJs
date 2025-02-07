@@ -11,10 +11,11 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
     const secretData = {
-        serviceID: "service_479lgup",
-        templateID:  "template_qx5gj5i",
-        pbKey:  "xcfGKVgw3vupzCI3W",
-    }
+        serviceID: process.env.EMAILJS_SERVICE_ID as string,
+        templateID:  process.env.EMAILJS_TEMPLATE_ID as string,
+        pbKey:  process.env.EMAILJS_PUBLIC_KEY as string,
+
+    };
 
     const form = useRef<HTMLFormElement>(null);
     const [formData, setFormData] = useState({
