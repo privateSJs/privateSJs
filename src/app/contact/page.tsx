@@ -136,6 +136,7 @@ const ContactForm = () => {
                                               onClick={() => clearField("message")}
                                               className="text-xs text-black underline italic hover:opacity-50 active:scale-90"/>
                             </div>
+                            <input type="hidden" name="timestamp" value={formData.timestamp}/>
                             <div className="flex flex-1 space-x-2 items-center text-justify justify-start">
                                 <CustomInput
                                     className="h-8 w-8  border-4 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-300"
