@@ -16,7 +16,6 @@ const Page = () => {
                     <span className="text-blue-300">{bodyPage.name}</span>
                   </span>
                   <span>{bodyPage.proffesion}</span>
-
               </h1>
               <p className="flex text-lg text-md text-center text-gray-500 mt-10 ml-3 italic">
                   ~ {bodyPage.peptalk} ~
