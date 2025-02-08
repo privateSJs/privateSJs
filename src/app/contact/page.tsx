@@ -91,6 +91,8 @@ const ContactForm = () => {
 
     return (
         <div className='flex flex-col ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px]'>
+            <meta name="viewport"
+                  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
             <div
                 className='flex flex-col top-1/4 bg-white bg-opacity-20 text-white h-full w-full pr-10 pl-10 pt-10 pb-10 border-4 border-white text-left rounded-xl mb-2'>
                 <span className="text-4xl font-bold">{bodyPage.title}</span>
@@ -137,7 +139,8 @@ const ContactForm = () => {
                                               onClick={() => clearField("message")}
                                               className="text-xs text-black underline italic hover:opacity-50 active:scale-90"/>
                             </div>
-                            <input type="hidden" name="timestamp" value={formData.timestamp} onChange={handeInputChange} />
+                            <input type="hidden" name="timestamp" value={formData.timestamp}
+                                   onChange={handeInputChange}/>
                             <div className="flex flex-1 space-x-2 items-center text-justify justify-start">
                                 <CustomInput
                                     className="h-8 w-8  border-4 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-300"
