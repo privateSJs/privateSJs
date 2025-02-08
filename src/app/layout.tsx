@@ -50,9 +50,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <html lang={currentLanguage}>
       <head>
         <title>Perpetuum Mobile</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
       </head>
-      <body className="flex min-w-full min-h-full">
+      <body className="flex min-w-full min-h-full overflow-hidden">
       <div className="fixed w-full z-10">
         <p className="fixed top-0 left-0 w-full">
           <CustomButton

@@ -90,9 +90,9 @@ const ContactForm = () => {
     const { bodyPage } = GetContactPageData();
 
     return (
-        <div className='flex flex-col ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px]'>
+        <div className='flex flex-col ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px] scale-95 lg:scale-100'>
             <meta name="viewport"
-                  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+                  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
             <div
                 className='flex flex-col top-1/4 bg-white bg-opacity-20 text-white h-full w-full pr-10 pl-10 pt-10 pb-10 border-4 border-white text-left rounded-xl mb-2'>
                 <span className="text-4xl font-bold">{bodyPage.title}</span>

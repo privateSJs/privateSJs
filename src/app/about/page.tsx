@@ -34,8 +34,8 @@ const AboutMe = () => {
   return (
 
       <div
-          className="relative ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px] justify-center items-center bg-white border-[3px] border-black border-opacity-20 text-black font-bold opacity-95">
-          <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+          className="relative ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px] justify-center items-center bg-white border-[3px] border-black border-opacity-20 text-black font-bold opacity-95 scale-95 lg:scale-100">
+          <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
           <div className="flex flex-row w-full h-full justify-center items-center">
               <div className="relative w-[1000px] h-[800px] hidden lg:block ml-[40px]">
                   {imgs.map((img, i) => (
