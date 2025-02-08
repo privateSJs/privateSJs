@@ -9,12 +9,14 @@ const Page = () => {
     const { bodyPage } = GetHomePageData();
   return (
       <div className="space-y-4 min-h-full min-w-full h-screen w-screen">
+          <meta name="viewport"
+                content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, , user-scalable=yes"/>
           <ParticlesBackground/>
           <div className=" absolute top-1/2 justify-center items-center ml-[20px] mr-[20px]">
               <h1 className=" flex flex-col text-6xl font-bold text-left text-white mb-2 ml-3 ">
                   <span>{bodyPage.welcome}</span>
                   <span>{bodyPage.introduce}
-                    <span className="text-blue-300">{bodyPage.name}</span>
+                      <span className="text-blue-300">{bodyPage.name}</span>
                   </span>
                   <span>{bodyPage.proffesion}</span>
               </h1>
