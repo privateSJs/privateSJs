@@ -11,9 +11,9 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
     const secretData = {
-        serviceID: process.env.EMAILJS_SERVICE_ID as string,
-        templateID:  process.env.EMAILJS_TEMPLATE_ID as string,
-        pbKey:  process.env.EMAILJS_PUBLIC_KEY as string,
+        serviceID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        templateID:  process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        pbKey:  process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string,
 
     };
 

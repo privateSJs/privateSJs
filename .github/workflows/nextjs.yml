@@ -34,15 +34,15 @@ jobs:
 
       - name: Debug environment variables
         run: |
-          echo "EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}"
-          echo "EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}"
-          echo "EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}"
+          echo "NEXT_PUBLIC_EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}"
+          echo "NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}"
+          echo "NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}"
 
       - name: Set environment variables
         run: |
-          echo "EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}" >> $GITHUB_ENV
-          echo "EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
-          echo "EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}" >> .env
+          echo "NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}" >> .env
+          echo "NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}" >> .env
 
       - name: Detect package manager
         id: detect-package-manager
