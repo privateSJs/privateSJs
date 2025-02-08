@@ -35,7 +35,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   };
 
   const sidebarItems = [
-    { label: sidebar.home, link: "/", icon: <FaHome /> },
+    { label: sidebar.home, link: "/home", icon: <FaHome /> },
     { label: sidebar.aboutMe, link: "/about", icon: <FaUserAlt /> },
     { label: sidebar.contact, link: "/contact", icon: <FaEnvelope /> },
   ];
