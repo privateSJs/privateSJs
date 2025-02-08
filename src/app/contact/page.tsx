@@ -95,9 +95,9 @@ const ContactForm = () => {
                   content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
             <div
                 className='flex flex-col top-1/4 bg-white bg-opacity-20 text-white h-full w-full pr-10 pl-10 pt-10 pb-10 border-4 border-white text-left rounded-xl mb-2'>
-                <span className="text-4xl font-bold">{bodyPage.title}</span>
-                <span className="text-lg font-bold mt-2 mb-5 text-left">{bodyPage.introduce}</span>
-                <span>{bodyPage.description}</span>
+                <span className="flex flex-1 text-2xl lg:text-4xl font-bold">{bodyPage.title}</span>
+                <span className="flex flex-1 text-lg font-bold mt-2 mb-5 text-left">{bodyPage.introduce}</span>
+                <span className="flex flex-1 text-1xl">{bodyPage.description}</span>
             </div>
             <form ref={form} onSubmit={sendEmail}>
                 <div className='flex flex-row'>
