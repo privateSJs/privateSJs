@@ -36,6 +36,10 @@ jobs:
           EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
           EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
           EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
+        run: |
+          echo "EMAILJS_SERVICE_ID=${{ secrets.EMAILJS_SERVICE_ID }}" >> $GITHUB_ENV
+          echo "EMAILJS_TEMPLATE_ID=${{ secrets.EMAILJS_TEMPLATE_ID }}" >> $GITHUB_ENV
+          echo "EMAILJS_PUBLIC_KEY=${{ secrets.EMAILJS_PUBLIC_KEY }}" >> $GITHUB_ENV
       - name: Detect package manager
         id: detect-package-manager
         run: |
