@@ -69,7 +69,7 @@ const ContactForm = () => {
 
     const handeInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const {name, value} = e.target;
-        setFormData((prevData) => ({...prevData, [name]: value}));
+        setFormData((prevData) => ({...prevData, [name]: value, timestamp: getCurrentTime()}));
     };
 
     const clearField = (field: string) => {
