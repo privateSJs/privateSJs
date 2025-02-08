@@ -3,6 +3,7 @@ import React from "react";
 import ParticlesBackground from "@/components/BackgroundParticles";
 import GetHomePageData from "@/components/HomePageData";
 import CustomButton from "@/components/CustomButton";
+import Link from "next/link";
 
 const Page = () => {
     const { bodyPage } = GetHomePageData();
@@ -20,7 +21,9 @@ const Page = () => {
               <p className="flex text-lg text-md text-center text-gray-500 mt-10 ml-3 italic">
                   ~ {bodyPage.peptalk} ~
               </p>
-              <CustomButton title={bodyPage.button}/>
+              <Link href="/contact">
+                  <CustomButton title={bodyPage.button}/>
+              </Link>
           </div>
       </div>
   );
