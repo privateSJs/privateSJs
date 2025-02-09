@@ -3,7 +3,6 @@ import { usePathname} from "next/navigation";
 import { SideBarProps } from "../type/type";
 import Image from "next/image";
 import Link from "next/link";
-import {motion} from "framer-motion";
 
 const CustomSidebar = ({
   isOpen,
