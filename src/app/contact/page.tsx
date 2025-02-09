@@ -90,11 +90,11 @@ const ContactForm = () => {
     const { bodyPage } = GetContactPageData();
 
     return (
-        <div className='flex flex-col ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px]'>
+        <div className='flex flex-1 flex-col ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px]'>
             <meta name="viewport"
                   content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
             <div
-                className='flex flex-col top-1/4 bg-white bg-opacity-20 text-white h-full w-full pr-10 pl-10 pt-10 pb-10 border-4 border-white text-left rounded-xl mb-2'>
+                className='flex flex-1 flex-col top-1/4 bg-white bg-opacity-20 text-white h-full w-full pr-10 pl-10 pt-10 pb-10 border-4 shadow-[30px_30px_30px_rgba(255,255,255,0.2)] text-left rounded-xl mb-2'>
                 <span className="flex flex-1 text-2xl lg:text-4xl font-bold">{bodyPage.title}</span>
                 <span className="flex flex-1 text-lg font-bold mt-2 mb-5 text-left">{bodyPage.introduce}</span>
                 <span className="flex flex-1 text-1xl">{bodyPage.description}</span>
@@ -102,7 +102,7 @@ const ContactForm = () => {
             <form ref={form} onSubmit={sendEmail}>
                 <div className='flex flex-row'>
                     <div
-                        className="flex justify-center items-center h-full w-full bg-blue-300 rounded-xl pt-4 pb-4  pl-4 pr-4 border-4 border-white">
+                        className="flex justify-center items-center h-full w-full bg-blue-300 rounded-xl shadow-[30px_30px_30px_rgba(255,255,255,0.2)] pt-4 pb-4  pl-4 pr-4 border-4 border-white">
                         <li className="flex flex-col space-y-4 w-full">
                             <CustomButton type="button" title={bodyPage.btnClearAllFields}
                                           onClick={() => clearAllFields()}
@@ -167,7 +167,7 @@ const ContactForm = () => {
                         {bodyPage.successAlert}
                     </span>
                 )}
-                <div className="flex flex-1 w-full h-full">
+                <div className="flex flex-1 w-full h-full ">
                     <CustomButton type="submit" value="Send" title={bodyPage.buttonSubmit}/>
                 </div>
             </form>
