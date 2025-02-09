@@ -4,6 +4,7 @@ import Image from "next/image";
 import {images} from "../../constants";
 import { useState, useEffect } from "react";
 import GetAboutMePageData from "../../components/AboutMePageData";
+import { motion } from "framer-motion";
 
 
 const AboutMe = () => {
@@ -33,8 +34,12 @@ const AboutMe = () => {
 
   return (
 
-      <div
-          className="relative ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px] justify-center items-center bg-white shadow-[30px_30px_30px_rgba(255,255,255,0.2)] border-black border-opacity-20 text-black font-bold opacity-95 scale-95 lg:scale-100">
+      <motion.div
+          className="relative ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px] justify-center items-center bg-white shadow-[30px_30px_30px_rgba(255,255,255,0.2)] border-black border-opacity-20 text-black font-bold opacity-95 scale-95 lg:scale-100 max-w-fit max-h-fit"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}>
           <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes"/>
           <div
               className="relative flex flex-col lg:flex-row w-full h-full justify-center items-center space-y-4 lg:space-y-0">
@@ -78,7 +83,7 @@ const AboutMe = () => {
                   ))}
               </div>
           </div>
-      </div>
+      </motion.div>
 
   );
 };

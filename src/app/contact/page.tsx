@@ -6,6 +6,7 @@ import CustomButton from "@/components/CustomButton";
 import GetContactPageData from "@/components/ContactPageData";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 
 
@@ -90,7 +91,11 @@ const ContactForm = () => {
     const { bodyPage } = GetContactPageData();
 
     return (
-        <div className='flex flex-1 flex-col ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px]'>
+        <motion.div className='flex flex-1 flex-col ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px] max-h-fit max-w-fit'
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}>
             <meta name="viewport"
                   content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
             <div
@@ -171,7 +176,7 @@ const ContactForm = () => {
                     <CustomButton type="submit" value="Send" title={bodyPage.buttonSubmit}/>
                 </div>
             </form>
-        </div>
+        </motion.div>
     );
 };
 

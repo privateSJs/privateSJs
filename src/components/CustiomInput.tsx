@@ -7,7 +7,7 @@ const CustomInput = ({
     icon,
     secureTextEntry = false,
     labelStyle = 'text-black',
-    containerStyle = 'flex flex-col',
+    containerStyle = 'flex flex-1 flex-col w-full h-full',
     inputStyle = 'text-black px-2 py-2 border border-opacity-75 border-black rounded-md h-full max-w-screen w-full md:w-1/2 lg:w-1/3',
     iconStyle,
     ...props

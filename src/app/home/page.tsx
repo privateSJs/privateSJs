@@ -4,11 +4,16 @@ import ParticlesBackground from "@/components/BackgroundParticles";
 import GetHomePageData from "@/components/HomePageData";
 import CustomButton from "@/components/CustomButton";
 import Link from "next/link";
+import {motion} from "framer-motion";
 
 const Page = () => {
     const { bodyPage } = GetHomePageData();
   return (
-      <div className="space-y-4 min-h-full min-w-full h-screen w-screen">
+      <motion.div className="space-y-4 max-h-fit max-w-fit"
+                  initial={{ opacity: 0 }} // Zaczynamy od 0
+                  animate={{ opacity: 1 }} // Przejście do pełnej widoczności
+                  exit={{ opacity: 0 }} // Wyblaknięcie, kiedy strona znika
+                  transition={{ duration: 0.5 }} >
           <meta name="viewport"
                 content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, , user-scalable=yes"/>
           <ParticlesBackground/>
@@ -27,7 +32,7 @@ const Page = () => {
                   <CustomButton title={bodyPage.button}/>
               </Link>
           </div>
-      </div>
+      </motion.div>
   );
 };
 
