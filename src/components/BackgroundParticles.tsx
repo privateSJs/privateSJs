@@ -4,7 +4,6 @@ import {
     type Container,
     type ISourceOptions,
 } from "@tsparticles/engine";
-import {images} from "../constants";
 import {loadFull} from "tsparticles";
 
 const ParticlesBackground = () => {
