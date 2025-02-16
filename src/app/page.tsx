@@ -4,7 +4,9 @@ import Link from "next/link";
 
 const WelcomePage = () => {
     useEffect(() => {
-        window.location.href = "/privateSJs/home";
+        if (typeof window !== "undefined") {
+            window.location.href = "/privateSJs/home";
+        }
     }, []);
   return (
       <div className="flex flex-col justify-center items-center w-full h-full">
