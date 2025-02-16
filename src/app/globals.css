@@ -17,10 +17,10 @@
 body {
     color: var(--foreground);
     background: var(--background);
-    font-family: 'Comic Sans MS', "Comic Sans", monospace;
+    font-family: 'GentiumAlt', "Bitstream Charter", monospace;
     height: 100vh; /* Zapewni, że tło obejmuje cały ekran */
-    background-image: url("../../public/assets/db-image.png"), url("../../public/assets/anaconda-image.png");
-    background-position: 20% 120%, 98% 10%;
+    background-image: url("../../public/assets/db-image.png"), url("../../public/assets/anaconda-image.png"), url("https://tenor.com/bhgz6.gif");
+    background-position: 20% 120%, 98% 10%, 1% 1%;
     background-repeat: no-repeat, no-repeat;
     background-attachment: scroll, scroll;
 }
@@ -30,7 +30,5 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
 }
 

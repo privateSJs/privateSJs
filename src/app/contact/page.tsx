@@ -91,7 +91,7 @@ const ContactForm = () => {
     const { bodyPage } = GetContactPageData();
 
     return (
-        <motion.div className='flex flex-1 flex-col ml-[20px] mr-[20px] lg:ml-[100px] lg:mr-[100px] max-h-fit max-w-fit'
+        <motion.div className='flex flex-1 flex-col ml-[20px] mr-[20px] mt-5 lg:ml-[100px] lg:mr-[100px] max-h-fit max-w-fit'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -146,7 +146,7 @@ const ContactForm = () => {
                             </div>
                             <input type="hidden" name="timestamp" value={formData.timestamp}
                                    onChange={handeInputChange}/>
-                            <div className="flex flex-1 space-x-2 items-center text-justify justify-start">
+                            <div className="flex flex-1 space-x-2 items-center text-justify mr-auto">
                                 <CustomInput
                                     className="h-8 w-8  border-4 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-300"
                                     type="checkbox"
@@ -155,14 +155,14 @@ const ContactForm = () => {
                                     required
                                 />
                                 <span className="flex flex-row text-black">
-                                {bodyPage.policy1}
-                            </span>
+                                    {bodyPage.policy1}
+                                </span>
                                 <Link href="/policy" className="text-red-500 hover:underline">
                                     {bodyPage.policy3}
                                 </Link>
                                 <span className="flex flex-row text-black">
-                                {bodyPage.policy2}
-                            </span>
+                                    {bodyPage.policy2}
+                                </span>
                             </div>
                         </li>
                     </div>

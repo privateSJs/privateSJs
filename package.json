@@ -26,13 +26,16 @@
     "next": "^15.1.6",
     "postcss-loader": "^8.1.1",
     "react": "^19.0.0",
+    "react-chrono": "^2.6.1",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.0",
     "react-icons": "^5.4.0",
     "react-tsparticles": "^2.12.2",
     "serve": "^14.2.4",
     "style-loader": "^4.0.0",
-    "tsparticles": "^3.8.0"
+    "tsparticles": "^3.8.0",
+    "vis-data": "^7.1.9",
+    "vis-timeline": "^7.7.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

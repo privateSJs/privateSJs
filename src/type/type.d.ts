@@ -22,6 +22,10 @@ declare interface SideBarProps {
   classNameSocialItems?: string;
   hoverItems?: string;
   classNameSidebar?: string;
+  classNameLeftChildren?: string;
+  classNameRightChildren?: string;
+  leftChildren?: React.ReactNode;
+  rightChildren?: React.ReactNode;
 }
 
 declare interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

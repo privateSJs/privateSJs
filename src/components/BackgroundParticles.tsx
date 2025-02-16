@@ -47,7 +47,7 @@ const ParticlesBackground = () => {
                         quantity: 4,
                     },
                     repulse: {
-                        distance: 400,
+                        distance: 100,
                         duration: 0.4,
                     },
                 },
@@ -58,10 +58,10 @@ const ParticlesBackground = () => {
                 },
                 links: {
                     color: "#ffffff",
-                    distance: 150,
-                    enable: false,
-                    opacity: 0.5,
-                    width: 1,
+                    distance: 300,
+                    enable: true,
+                    opacity: 0.2,
+                    width: 2,
                 },
                 move: {
                     direction:"left",
@@ -69,30 +69,28 @@ const ParticlesBackground = () => {
                     outModes: {
                         default: "out",
                     },
-                    random: false,
+                    random: true,
                     speed: 6,
-                    straight: false,
+                    straight: true,
                 },
                 number: {
                     density: {
                         enable: true,
                     },
-                    value: 80,
+                    value: 120,
                 },
                 opacity: {
                     value: 0.5,
                 },
                 shape: {
-                    type:"star",
+                    type:"circle",
                     image: {
-                        src:images.frenchie,
+                        src: "https://png.pngtree.com/element_our/20190530/ourmid/pngtree-correct-icon-image_1267804.jpg",
                         width: 40,
                         height: 40
                     }
                 },
-                size: {
-                    value: { min: 5, max: 8 },
-                },
+                size: { value: 5, random: true },
             },
             detectRetina: true,
         }),
